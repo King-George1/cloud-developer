@@ -6,8 +6,8 @@ export const config = {
     host: "kingdatabase.c2rrzug7t6oi.us-east-1.rds.amazonaws.com",
     dialect: "postgres",
     aws_region: "us-east-1",
-    aws_profile: "default",
-    aws_media_bucket: "",
+    aws_profile: "UdacityLab",
+    aws_media_bucket: "udagram-kinggeorge-dev",
   },
   jwt: {
     secret: " ",
