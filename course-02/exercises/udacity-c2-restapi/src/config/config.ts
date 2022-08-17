@@ -1,13 +1,14 @@
+require("dotenv").config();
 export const config = {
   dev: {
-    username: "kingdatabase",
-    password: "kingdatabase",
-    database: "kingdatabase",
-    host: "kingdatabase.c2rrzug7t6oi.us-east-1.rds.amazonaws.com",
+    username: process.env.POSTGRES_USERNAME,
+    password: process.env.POSTGRES_PASSWORD,
+    database: process.env.POSTGRES_DATABASE,
+    host: process.env.POSTGRES_HOST,
     dialect: "postgres",
-    aws_region: "us-east-1",
-    aws_profile: "UdacityLab",
-    aws_media_bucket: "udagram-kinggeorge-dev",
+    aws_region: process.env.AWS_REGION,
+    aws_profile: process.env.AWS_PROFILE,
+    aws_media_bucket: process.env.AWS_MEDIA_BUCKET,
   },
   jwt: {
     secret: " ",
